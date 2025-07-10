@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        border: border-box;
+        }
+.nav_bar{
+    height: 60px;
+    background-color: rgb(30, 143, 236);
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 120px;
+    padding: 3px;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.logo{
+    text-align: center;
+    background-image: url("amazonicon.jpeg");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+/* box2 */
+.add_first{
+    color: #CCCCCC;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+.add_second{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add_icon{
+    display: flex;
+}
+/* box3 */
+.nav_search{
+    display: flex;
+    background-color: pink;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 620px;
+    border-radius: 3px;
+}
+.search_select{
+    background-color: #f3f3f3;
+    width: 50px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-align: center;
+    border: none;
+}
+.search_input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+.search_icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color:#ffffff;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: black;
+}
+.nav_search:hover{
+    border: 2px  solid rgba(0, 0, 0, 0.6)
+}
+.box_4{
+    color: white;
+    display: flex;
+}
+.box_4_mat{
+    margin-left: 3px;
+    background-color: #0f1111;
+    color: white;
+    border: none;
+    width: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.Accounts_ele,.returns-1{
+    font-size: 0.7rem;
+}
+.Accounts_select{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.returns-2{
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: white;
+}
+.nav_cart{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.nav_cart i{
+    font-size: 35px;
+}
+.web_name{
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 50px;
+    width: 70px;
+}
+.card-image {
+  width: 200px;  
+  height: 300px; 
+  object-fit: cover; 
+}
+
+.Accounts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MAIN_CONTENT {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background: url('SearchPagebg.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.beach-card {
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .MAIN_CONTENT {
+        flex-direction: column;
+        align-items: center;
+    }
+    .beach-card {
+        width: 90%;
+    }
+}
+
+.beach-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+}
+.beach-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+.beach-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+.beach-card:hover {
+    transform: scale(1.05);
+}
+
+.beach-image {
+    width: 100%;
+    height: 200px;
+}
+
+.beach-info {
+    padding: 10px;
+}
+.nav_bar {
+    padding: 0 20px;
+    gap: 20px;
+}
+.beach-info h3{
+    margin-top: 20px;
+    color: rgb(12, 13, 14);
+    margin-bottom: 20px;
+}
+.additional-info{
+    margin-top: 30px;
+}
+.additional-info i{
+    font-size: larger;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="body">
+    <div class="nav_bar">
+        <!-- box-1 -->
+        <div class="nav_logo border">
+            <div class="web_name">
+                <p><b>OCEAN</b></p>
+                <p><b>VIEW</b></p>
+            </div>
+            <div class="logo">
+                <img src="WebsiteIcon.jpg" alt="img" height="40px" width="40px" style="border-radius: 10px; margin-left: 10px;">
+            </div> 
+        </div> 
+        <div class="nav_logo border">
+                <i class="fa-solid fa-phone" height="50px" width="50px" style="margin-right: 5px;"></i>
+                <p><b>Contact Us</b></p>
+        </div> 
+                <form action="Rushikonda.html" method="get" class="nav_search">
+                    <select class="search_select">
+                        <option>All</option>
+                    </select>
+                    <input type="text" placeholder="Search Beach" class="search_input" name="query">
+                    <button type="submit" class="search_icon" height="40px" style="border: none;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+          <div class="Accounts border">
+             <i class="fa-solid fa-triangle-exclamation" height="110px" width="110px" style="margin-right: 5px;"></i>
+             <p style="margin-left: 5px;">Safety Precautions</p>
+          </div>
+          <div class="Accounts border">
+            <i class="fa-solid fa-message"></i>
+             <p style="margin-left: 5px;">Feedback</p>
+          </div>
+           </div> 
+    </div>
+    <div class="MAIN_CONTENT">
+
+        <div class="beach-card">
+            <a href="Rushikonda.html">
+                <img src="RushikondaBeach.jpg"class="beach-image">
+            </a> 
+            
+            <div class="beach-info">
+                <h3 style="margin-top: 20px; color: rgb(11, 11, 11); margin-bottom: 20px;"><b>RushiKonda Beach</b></h3>
+                <p>Rushikonda Beach, located near Visakhapatnam in Andhra Pradesh, is a stunning destination known for its golden sands and clear blue waters. Nestled amidst lush green hills, it's a haven for nature lovers and adventure enthusiasts, offering activities like swimming, windsurfing, and water sports. </p>
+                <!-- <p>Rushikonda Beach, located near Visakhapatnam in Andhra Pradesh, is a pristine coastal gem known for its golden sands and turquoise waters. Rushikonda Beach, located near Visakhapatnam in Andhra Pradesh, is a pristine coastal gem known for its golden sands and turquoise waters. </p> -->
+                <div class="additional-info" style="margin-top: 30px;">
+                    <div><i class="fas fa-map-marker-alt" style="margin-right: 10px; font-size: larger; margin-bottom: 10px; color: red;"></i> Visakhapatnam</div>
+                    <div><i class="fas fa-sun" style="color: yellow; margin-right: 10px; font-size: larger;"></i> 25°C Sunny</div>
+                </div>
+            </div>
+        </div>
+        <!-- CARD1 -->
+        <a href="WorkingPage.html" style="text-decoration: none;">
+            <div class="beach-card">
+                <a href="WorkingPage.html">
+                    <img src="AnjunaBeachImage.jpg" alt="Beach 1" class="beach-image"  >
+                </a> 
+                
+                <div class="beach-info">
+                    <h3>Anjuna Beach</h3>
+                    <p>Anjuna Beach, located in North Goa, is famous for its vibrant atmosphere, golden sands, and palm-fringed coastline. Known for its lively flea markets, beach parties, and water sports, it is a hotspot for tourists seeking a mix of relaxation and entertainment. </p>
+                    <div class="additional-info">
+                        <div><i class="fas fa-map-marker-alt" style="color: red;"></i> Goa</div>
+                        <div><i class="fas fa-sun" style="color: yellow;"></i> 30°C Sunny</div>
+                    </div>
+                </div>
+        </a>
+        </div>
+        <!-- card2 -->
+        <div class="beach-card">
+            <a href="WorkingPage.html">
+                <img src="RamakrishnaBeach.jpg" class="beach-image">
+            </a> 
+            
+            <div class="beach-info">
+                <h3>Ramakrishna Beach</h3>
+                <p>RK Beach, or Ramakrishna Beach, located in Visakhapatnam, Andhra Pradesh, is a vibrant coastal destination along the Bay of Bengal. Known for its scenic beauty, the beach offers a mix of relaxation and recreation, with attractions like the INS Kursura Submarine Museum and the Kali Temple nearby. </p>
+                <!-- <p>A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.</p> -->
+                <div class="additional-info">
+                    <div><i class="fas fa-map-marker-alt" style="color: red;"></i> Vishakapatnam</div>
+                    <div><i class="fas fa-sun" style="color: yellow;"></i> 20°C Sunny</div>
+                </div>
+            </div>
+        </div>
+        <!-- card3 -->
+        <div class="beach-card">
+            <a href="WorkingPage.html">
+                <img src="ButterFlyBeachImage.webp" class="beach-image">
+            </a> 
+            
+            <div class="beach-info">
+                <h3>Butterfly Beach</h3>
+                <p>Butterfly Beach, located in South Goa, is a secluded paradise known for its crescent-shaped shoreline, pristine golden sand, and crystal-clear waters. Accessible primarily by boat or trek, it offers tranquil beauty, stunning sunsets, and occasional sightings of dolphins and butterflies. </p>
+                <!-- <p> ButterFly Beach, is one of Visakhapatnam's most iconic and bustling beaches. Stretching along the Bay of Bengal, it offers golden sands, mesmerizing ocean views, and a lively atmosphere. The beach is perfect for leisurely walks, enjoying the sea breeze, and watching stunning sunrises or sunsets. </p> -->
+                <div class="additional-info">
+                    <div><i class="fas fa-map-marker-alt" style="color: red;"></i>South Goa</div>
+                    <div><i class="fas fa-sun" style="color: yellow;"></i> 27°C Sunny</div>
+                </div>
+            </div>
+        </div>
+        <!-- card4 -->
+        <div class="beach-card">
+            <a href="WorkingPage.html">
+                <img src="CalanguteBeachImage.jpg" class="beach-image" height="200px" width="100%">
+            </a> 
+            
+            <div class="beach-info">
+                <h3>Calangute Beach</h3>
+                <p>Calangute Beach, located in North Goa, is one of the most popular and lively beaches in India. Known as the "Queen of Beaches," it offers a bustling atmosphere with golden sands, water sports, beach shacks, and vibrant nightlife.</p>
+                <!-- <p>A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.</p> -->
+                <div class="additional-info">
+                    <div><i class="fas fa-map-marker-alt" style="color: red;"></i> North Goa</div>
+                    <div><i class="fas fa-sun" style="color: yellow;"></i> 28°C Sunny</div>
+                </div>
+            </div>
+        </div>
+        <!-- card5 -->
+        <div class="beach-card">
+            <a href="WorkingPage.html">
+                <img src="KovalamBeachImage.jpg" class="beach-image">
+            </a> 
+            
+            <div class="beach-info">
+                <h3>Kovalam Beach</h3>
+                <p>Kovalam Beach, located in Kerala, is a world-renowned coastal destination famous for its crescent-shaped shoreline, golden sands, and calm, azure waters. Comprised of three main beaches—Lighthouse, Hawah, and Samudra—it offers stunning views, water sports, and rejuvenating Ayurvedic treatments.</p>
+                <!-- <p>A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.A beautiful sandy beach with crystal clear water and plenty of sunshine.</p> -->
+                <div class="additional-info">
+                    <div><i class="fas fa-map-marker-alt" style="color: red;"></i> Kerala</div>
+                    <div><i class="fas fa-sun" style="color: yellow;"></i> 22°C Sunny</div>
+                </div>
+            </div>
+        </div>
+        <!-- card6 -->
+        <div class="beach-card">
+            <a href="WorkingPage.html">
+                <img src="MarariBeachimg.jpg"class="beach-image">
+            </a> 
+            
+            <div class="beach-info">
+                <h3>Marari Beach</h3>
+                <p>Marari Beach is the best beach in Alleppey. A true beach feel with the coconut trees around there and relaxing chairs. Stunning view of the sea, much more beautiful than the Alleppey beach with clean blue waters. </p>
+                <div class="additional-info">
+                    <div><i class="fas fa-map-marker-alt" style="color: red;"></i> Kerala</div>
+                    <div><i class="fas fa-sun" style="color: yellow;"></i> 26°C Sunny</div>
+                </div>
+            </div>
+        </div>
+        <!-- card7 -->
+        <div class="beach-card">
+            <a href="WorkingPage.html">
+                <img src="PuriBeachImage.jpg" alt="Beach 1" class="beach-image"  >
+            </a> 
+            
+            <div class="beach-info">
+                <h3>Puri Beach</h3>
+                <p>Puri Beach or the Golden beach is a beach in the city of Puri in the state of Odisha, India. It is on the shore of the Bay of Bengal. It is known for being a tourist attraction and a Hindu sacred place.</p>
+                <div class="additional-info">
+                    <div><i class="fas fa-map-marker-alt" style="color: red;"></i>Odisha</div>
+                    <div><i class="fas fa-sun" style="color: yellow;"></i> 28°C Sunny</div>
+                </div>
+            </div>
+        </div>
+        <!-- card8 -->
+        
+
+    </div>
+</div>
+<script>
+    // Map of beach names to their respective links
+    let beachLinks = {
+        "Rushikonda Beach": "Rushikonda.html",
+        "R K Beach": "RamakrishnaBeach.html",
+        "Radhanagar Beach": "RadhanagarBeach.html",
+        "puriBeach": "Puribeach.html",
+        "Butterfly Beach": "ButterFlyBeach.html",
+        "Kovalam Beach": "KovalamBeach.html"
+    };
+
+    // Form submission handler
+    document.querySelector(".search_icon").addEventListener("submit", function(event) {
+        let searchInput = document.querySelector(".search_input").value;
+
+        // Check if the input matches a beach name
+        if (beachLinks[searchInput]) {
+            // Set form action to the corresponding beach link
+            document.querySelector(".nav_search").action = beachLinks[searchInput];
+        } else {
+            // Prevent form submission if no match is found
+            event.preventDefault();
+            alert("Beach not found. Please enter a valid beach name.");
+        }
+    });
+</script>
+</body>
+</html>

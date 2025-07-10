@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearby Hospitals - Rushikonda Beach</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://i.pinimg.com/736x/41/b4/f3/41b4f3534da81d3d5cffd8d5ba4aa0bf.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1000px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #00796b;
+      margin-bottom: 20px;
+    }
+
+    /* Hospital card */
+    .hospital {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hospital image */
+    .hospital img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    /* Hospital information */
+    .hospital-info {
+      flex: 1;
+    }
+
+    /* Hospital name */
+    .hospital-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: #004d40;
+      margin-bottom: 8px;
+    }
+
+    /* Hospital details */
+    .hospital-details {
+      font-size: 14px;
+      color: #555555;
+      margin-bottom: 6px;
+    }
+
+    /* Hospital distance */
+    .hospital-distance {
+      font-size: 14px;
+      font-weight: bold;
+      color: #ff6f00;
+    }
+
+    /* Button styling */
+    .contact-button {
+      padding: 8px 15px;
+      background-color: #00796b;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 8px;
+      display: inline-block;
+    }
+
+    .contact-button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Nearby Hospitals - Rushikonda Beach</h1>
+
+    <!-- Hospital 1 -->
+    <div class="hospital">
+      <img src="Sea_side_Hospital.jpg" alt="Hospital Image">
+      <div class="hospital-info">
+        <div class="hospital-name">Seaside Care Hospital</div>
+        <div class="hospital-details">Address: 10 Beach Rd, Rushikonda</div>
+        <div class="hospital-details">Contact: (123) 456-7890</div>
+        <div class="hospital-distance">Distance: 1.2 miles</div>
+        <a href="tel:+1234567890" class="contact-button">Contact Now</a>
+      </div>
+    </div>
+
+    <!-- Hospital 2 -->
+    <div class="hospital">
+      <img src="Ocean_View_Hospital.webp" alt="Hospital Image">
+      <div class="hospital-info">
+        <div class="hospital-name">Oceanview Medical Center</div>
+        <div class="hospital-details">Address: 15 Ocean Dr, Rushikonda</div>
+        <div class="hospital-details">Contact: (123) 987-6543</div>
+        <div class="hospital-distance">Distance: 2.5 miles</div>
+        <a href="tel:+1239876543" class="contact-button">Contact Now</a>
+      </div>
+    </div>
+
+    <!-- Hospital 3 -->
+    <div class="hospital">
+      <img src="Coastal_Health_Center_Hospital.jpg" alt="Hospital Image">
+      <div class="hospital-info">
+        <div class="hospital-name">Coastal Health Clinic</div>
+        <div class="hospital-details">Address: 20 Shoreline Blvd, Rushikonda</div>
+        <div class="hospital-details">Contact: (123) 555-6789</div>
+        <div class="hospital-distance">Distance: 3.1 miles</div>
+        <a href="tel:+1235556789" class="contact-button">Contact Now</a>
+      </div>
+    </div>
+
+    <!-- Hospital 4 -->
+    <div class="hospital">
+      <img src="BayFront_Hospital.jpg" alt="Hospital Image">
+      <div class="hospital-info">
+        <div class="hospital-name">Bayfront Emergency Hospital</div>
+        <div class="hospital-details">Address: 25 Wave St, Rushikonda</div>
+        <div class="hospital-details">Contact: (123) 444-1122</div>
+        <div class="hospital-distance">Distance: 3.9 miles</div>
+        <a href="tel:+1234441122" class="contact-button">Contact Now</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

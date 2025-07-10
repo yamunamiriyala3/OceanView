@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1c1c1e;
+            /* background: linear-gradient(120deg, #a8c0ff, #fbc2eb); Soft gradient background */
+            font-family: Arial, sans-serif;
+            color: #ddd;
+            height: 100vh;
+        }
+
+        .dashboard {
+            display: flex;
+            background: url('https://t3.ftcdn.net/jpg/08/70/16/68/360_F_870166868_CIArrHgH6vgqKGo1yVtzUmF722nUw22G.jpg') no-repeat center center;
+            background-size: cover;
+            border: 1px solid white;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 85%;
+            max-width: 1200px;
+            color: #ddd;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            /* height: 500px; */
+        }
+
+        .left-panel {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-right: 2px solid rgba(255, 255, 255, 1);
+        }
+
+        .city-info {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .temperature {
+            height: 200px;
+            width: 300px;
+            margin-top: 30px;
+            /* margin-bottom: 30px; */
+        }
+        .forecast-chart {
+            margin-top: 20px;
+        }
+        .forecast-chart img {
+            width: 100%;
+            border-radius: 8px;
+            opacity: 0.8;
+        }
+        .forecast-list {
+            margin-top: 40px;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        .right-panel {
+            text-align: left;
+            flex: 2;
+            padding: 10px;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+        }
+        .weather-summary {
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .summary-details {
+            margin-top: 10px;
+            width: 100%;
+            /* height: 100px; */
+            background-color: rgba(0, 0, 0, 0.3);
+            border: 2px solid white;
+            border-radius: 1rem; 
+            font-size: 1.2rem;
+            text-align: center;
+            opacity: 1;
+        }
+
+        .hourly-forecast {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 0.9rem;
+            margin-bottom: 50px;
+        }
+        .weekdays{
+            height: 80px;
+            width: 80px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.3);
+            /* background-color: rgba(0, 0, 0, 0.3); */
+            /* border: 2px solid white; */
+        }
+        .weekdays p{
+            color: white;
+        }
+        .hourly-forecast div {
+            text-align: center;
+        }
+
+        .hourly-forecast span {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000000;
+        }
+        .forecast-chart{
+            height: 40px;
+            width: 200px;
+            border-radius: 1rem;
+            border: 1px solid white;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .maps_box{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .map_img{
+            height: 30px;
+            width: 30px;
+        }
+        .ammenities{
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .bolded{
+            font-weight: 550;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+
+
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <div class="city-info">Rushikonda Beach</div>
+            <div class="temperature">
+                <img src="RushikondaBeach.jpg" alt="Beach img" height="100%" width="100%" style="border-radius: 20px;">
+            </div>
+            <div class="forecast-list">
+                <a href="https://en.wikipedia.org/wiki/Rushikonda_Beach" style="text-decoration: none; color: white;">Rushikonda Beach is a stunning coastal retreat located in Visakhapatnam, commonly known as Vizag, in the Indian state of Andhra Pradesh.Rushikonda Beach is a stunning coastal retreat located in Visakhapatnam, commonly known as Vizag, in the Indian state of Andhra Pradesh. <b>Read More....</b></a>
+            </div>
+            <div class="forecast-chart">
+                <a href="searchpage.html" style="text-decoration: none; color: white;">
+                    <div class="maps_box">
+                        <p style="margin-left: 10px;"><b>Back to Search</b></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Right Panel -->
+        <div class="right-panel">
+            <!-- <div class="weather-summary" >Storm with Heavy Rain</div> -->
+             <h3>Summary</h3>
+            <div class="summary-details">
+                <p>Variable clouds with snow showers. High 17°F. Winds E at 10 to 20 mph. Chance of snow 50%. Snow accumulations less than one inch.Variable clouds with snow showers. High 17°F. Winds E at 10 to 20 mph. Chance of snow 50%. Snow accumulations less than one inch.Variable clouds with snow showers. High 17°F. Winds E at 10 to 20 mph. Chance of snow 50%. Snow accumulations less than one inch.Variable clouds with snow showers. High 17°F. Winds E at 10 to 20 mph. Chance of snow 50%. Snow accumulations less than one inch.</p>
+            </div>
+            <h3>weekdays Detail's</h3>
+            <div class="hourly-forecast">
+                <div class="weekdays">
+                    <p>Monday</p>
+                    <span>20°</span>
+                </div>
+                <div class="weekdays">
+                    <p>Tuesday</p>
+                    <span>17°</span>
+                </div>
+                <div class="weekdays">
+                    <p>Wednesday</p>
+                    <span>14°</span>
+                </div>
+                <div class="weekdays">
+                    <p>Thursday</p>
+                    <span>12°</span>
+                </div>
+                <div class="weekdays">
+                    <p>Friday</p>
+                    <span>10°</span>
+                </div>
+                <div class="weekdays">
+                    <p>Saturday</p>
+                    <span>-8°</span>
+                </div>
+                <div class="weekdays">
+                    <p>Sunday</p>
+                    <span>-9°</span>
+                </div>
+            </div>
+            <div class="ammenities">
+                <div class="forecast-chart">
+                    <a href="WorkingPage.html" style="text-decoration: none; color: white;">
+                        <div class="maps_box">
+                            <div class="map_img">
+                                <img src="https://png.pngtree.com/png-clipart/20190613/original/pngtree-pinmark-vacation-icon-and-beach-concept-png-image_3597522.jpg" alt="img" height="30px" width="30px">
+                            </div>
+                            <p style="margin-left: 10px;" class="bolded"><b>Geo Spatial Maps</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="forecast-chart">
+                    <a href="hospitals.html" style="text-decoration: none; color: white;">
+                        <div class="maps_box">
+                            <div class="map_img">
+                                <img src="hospitalsIcon.jpg" alt="img" height="30px" width="30px">
+                            </div>
+                            <p style="margin-left: 10px;" class="bolded"><b>Hospitals</b></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="forecast-chart">
+                    <a href="Hotels.html" style="text-decoration: none; color: white;">
+                        <div class="maps_box">
+                            <div class="map_img">
+                                <img src="HotelsIcon.jpg" alt="img" height="30px" width="30px">
+                            </div>
+                            <p style="margin-left: 10px;" class="bolded"><b>Hotels</b></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

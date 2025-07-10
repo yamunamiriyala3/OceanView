@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels Near Beach</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0f3994;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .hotel-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        .hotel-card:hover {
+            transform: scale(1.05);
+        }
+        .hotel-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            /* border-bottom: 2px solid #4A90E2; */
+        }
+        .hotel-info {
+            padding: 15px;
+        }
+        .hotel-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .hotel-rating {
+            font-size: 1.2em;
+            color: #4A90E2;
+        }
+        .hotel-distance,
+        .hotel-availability {
+            font-size: 1em;
+            color: #666;
+            margin-top: 5px;
+        }
+        .hotel-price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #27ae60;
+            margin-top: 10px;
+        }
+        .hotel-details {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        .book-button {
+            background-color: #596275;
+            /* background-color: powderblue; */
+            /* background-color: #154c8b; */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+        }
+        .book-button:hover {
+            background-color: #596275;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotels Near the Beach</h1>
+        <p>Your perfect getaway awaits!</p>
+    </header>
+
+    <div class="container">
+        <!-- Hotel 1 -->
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="Beach_Front_Hotel.jpg" alt="Hotel 1">
+            </div>
+            <div class="hotel-info">
+                <div class="hotel-name">Beachfront Resort</div>
+                <div class="hotel-rating">⭐⭐⭐⭐⭐ 4.8/5</div>
+                <div class="hotel-distance">Distance: 0.2 miles from the beach</div>
+                <div class="hotel-availability">Availability: 5 rooms available</div>
+                <div class="hotel-price">$250 per night</div>
+                <div class="hotel-details">
+                    Enjoy a serene stay at our luxurious beachfront resort with stunning views and modern amenities.
+                </div>
+                <a href="#" class="book-button">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="SeaSide_Hotel.jpg" alt="Hotel 2">
+            </div>
+            <div class="hotel-info">
+                <div class="hotel-name">Seaside Paradise</div>
+                <div class="hotel-rating">⭐⭐⭐⭐ 4.3/5</div>
+                <div class="hotel-distance">Distance: 0.5 miles from the beach</div>
+                <div class="hotel-availability">Availability: 3 rooms available</div>
+                <div class="hotel-price">$180 per night</div>
+                <div class="hotel-details">
+                    A peaceful retreat with stunning ocean views, ideal for families and couples.
+                </div>
+                <a href="#" class="book-button">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="Ocean_Breeze_Hotel.jpg" alt="Hotel 3">
+            </div>
+            <div class="hotel-info">
+                <div class="hotel-name">Ocean Breeze Inn</div>
+                <div class="hotel-rating">⭐⭐⭐⭐⭐ 4.7/5</div>
+                <div class="hotel-distance">Distance: 0.1 miles from the beach</div>
+                <div class="hotel-availability">Availability: 2 rooms available</div>
+                <div class="hotel-price">$220 per night</div>
+                <div class="hotel-details">
+                    Enjoy oceanfront views and easy access to beach activities at this charming inn.
+                </div>
+                <a href="#" class="book-button">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Hotel 4 -->
+        <div class="hotel-card">
+            <div class="hotel-image">
+                <img src="Coastal_Escape_Hotel.jpg" alt="Hotel 4">
+            </div>
+            <div class="hotel-info">
+                <div class="hotel-name">Coastal Escape Hotel</div>
+                <div class="hotel-rating">⭐⭐⭐⭐ 4.4/5</div>
+                <div class="hotel-distance">Distance: 0.8 miles from the beach</div>
+                <div class="hotel-availability">Availability: 4 rooms available</div>
+                <div class="hotel-price">$195 per night</div>
+                <div class="hotel-details">
+                    A perfect getaway with beautiful coastal views and exceptional service.
+                </div>
+                <a href="#" class="book-button">Book Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

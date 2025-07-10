@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coastal Tourism Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url('loginbg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 350px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #067fb3;
+            margin-bottom: 20px;
+        }
+
+        .login-form h3 {
+            color: #1a1c20;
+            margin-bottom: 15px;
+        }
+
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #3c4a4f;
+            border-radius: 5px;
+        }
+
+        .login-btn, .google-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-btn {
+            background-color: #ed4e43c1; /* Red color for Login button */
+            color: #fff;
+        }
+
+        .google-btn {
+            background-color: #1272b7c1; /* Blue color for Google sign-in */
+            color: #fff;
+        }
+
+        .google-btn img {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+        }
+
+        .login-form p {
+            margin-top: 15px;
+        }
+
+        .login-form p a {
+            color: #259cc1ed;
+            text-decoration: none;
+        }
+        .jaanu {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Coastal Tourism</h2>
+        
+        <div class="login-form">
+            <h3>Login</h3>
+            <form action="searchpage.html" method="post">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+            <a href="WorkingPage.html" style="text-decoration: none; color: black;">
+                <button type="button" class="google-btn">
+                    Sign in with Google
+                </button>
+                <div class="jaanu">
+                    <p>Don't have an account? <a href="WorkingPage.html" style="text-decoration: none; color: rgb(0, 119, 255);">Sign up</a></p>
+                </div>
+            </a>
+    </div>
+</body>
+</html>
